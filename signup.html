@@ -1,0 +1,73 @@
+<!DOCTYPE html lang="en-US">
+<html>
+<head>
+    <title>Sign Up</title>
+
+    <meta charset="utf-8" />
+    <meta name="description" content="Sign up for Pharaoh's Palette to explore ancient Egyptian, Roman, Roman, and Islamic artifacts. Get tickets to a number of museums in Egypt.">
+    <meta name="keywords" content="Pharaoh's Palette, Sign up, Ancient Artifacts, Egyptian Artifacts, Roman Artifacts, Roman Artifacts, Islamic Artifacts, Museum Tickets, Egypt">
+    <meta name="author" content="Pharaoh's Palette">
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="icon" href="photos/Logo (1).png" type="image/png" class="web-icon">
+</head>
+<body>
+
+
+    <div class="signup-video">
+        <video autoplay loop muted>
+            <source src="photos/back4.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <form action="home.html" method="post" class="signup-form" id="signup">
+
+        <img src="photos/cutLogo (1).png" alt="Pharaoh's Palette logo" class="formlogo">
+        
+        <h3>Create a New Account</h3>
+    
+        <label for="fname"  style="margin-top: 20px;" >First Name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Enter your first name" required autofocus><br> 
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Enter your last name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="signup-email" name="email" placeholder="Enter your email" required><br>
+        <label for="dob">Date of Birth:</label><br> 
+        <input type="date" id="dob" name="dob"><br>
+        <label for="tel">Telephone Number:</label><br>
+        <input type="tel" id="tel" name="tel" placeholder="Enter your telephone number"><br>
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="signup-pwd" name="pwd" placeholder="Enter your password" required><br>
+        <label for="cpwd">Confirm Password:</label><br>
+        <input type="password" id="cpwd" name="cpwd" placeholder="Confirm your password" required><br>
+        <input type="submit" value="Sign Up" id="signup-button">
+    
+        <p class="signup-am">Already a member? <a href="#" id="loginLink">Login</a></p>
+    
+    </form>
+
+    <form action="home.html" method="post" class="signup-form" id="login">
+
+        <img src="photos/cutLogo (1).png" alt="Pharaoh's Palette logo" class="formlogo">
+
+        <h3>Login to Your Account</h3>
+
+        <label for="email"  style="margin-top: 20px;" >Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required autofocus><br>
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd" placeholder="Enter your password" required><br>
+        <input type="submit" value="Login">
+
+        <p class="signup-am">Not a member? <a href="#" id="signupLink">Sign Up</a></p>
+    </form>
+
+
+    <p class="signup-bottomline">
+        <a href="Privacy.html#help-section">Help</a> | 
+        <a href="Privacy.html#pp-section">Privacy Policy</a>
+         | &copy; 2023 Norhan Waleed
+    </p>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

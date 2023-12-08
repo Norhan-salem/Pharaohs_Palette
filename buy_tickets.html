@@ -1,0 +1,133 @@
+<!DOCTYPE html lang="en-US">
+<html>
+
+
+
+<head>
+    <title>Buy Tickets</title>
+
+    <meta charset="utf-8" />
+    <meta name="description" content="Get tickets to a number of museums in Egypt. Experience Egypt's heritage in person. ">
+    <meta name="keywords" content="Pharaoh's Palette, Tickets, Museum, Ancient Artifacts, Egyptian Artifacts, Roman Artifacts, Roman Artifacts, Islamic Artifacts, Museum Tickets, Egypt">
+    <meta name="author" content="Pharaoh's Palette">
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="icon" href="photos/Logo (1).png" type="image/png" class="web-icon">
+</head>
+
+
+
+<body class="btbody">
+
+    <header>
+        <div class="header">
+            <a href="home.html"><img src="photos/cutLogo (1).png" alt="Pharaoh's Palatte Logo"></a>
+
+            <nav class="navbar">
+                <a href="home.html">Home</a>
+                <div class="dropdown">
+                    <a href="viewall.html">View All</a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-sub">
+                            <a href="ancient.html">Ancient Egyptian</a>
+                            <div class="dropdown-content-sub">
+                                <a href="ancient.html#pyramids">The Pyramids</a>
+                                <a href="ancient.html#mummies">Mummies Hall</a>
+                            </div>
+                        </div>
+                        <a href="Roman.html">Roman</a>
+                        <a href="islamic.html">Islamic</a>
+                    </div>
+                </div>
+                <a href="buy_tickets.html">Buy Tickets</a>
+                <a href="Privacy.html#about-section">About</a>
+                <a href="home.html#contact-section">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+    
+    <aside>
+        <h4>Contact Us</h4>
+        <p>Phone: 123-456-7890</p>
+        <p>Email: info@Pharaohpalette.com</p>
+    </aside>
+
+    <main class="bt">
+        <form action="home.html" method="post" class="signup-form">
+            <h3>Buy your ticket right now</h3>
+
+                <fieldset>
+                  <legend>Personal Information:</legend>
+                  <label for="firstname">First name:</label><br>
+                  <input type="text" id="firstname" name="firstname" placeholder="Enter your first name"><br>
+                  <label for="lastname">Last name:</label><br>
+                  <input type="text" id="lastname" name="lastname" placeholder="Enter your last name"><br>
+                  <label for="email">Email:</label><br>
+                  <input type="email" id="btemail" name="email" placeholder="Enter your email"><br>
+                </fieldset>
+              
+                <fieldset>
+                  <legend>Credit Card Information:</legend>
+                  <label for="cardnumber">Card number:</label><br>
+                  <input type="text" id="cardnumber" name="cardnumber" placeholder="Enter your card number"><br>
+                  <label for="expirydate">Expiry date:</label><br>
+                  <input type="date" id="expirydate" name="expirydate" placeholder="Enter expiry date"><br>
+                  <label for="cvv">CVV:</label><br>
+                  <input type="text" id="cvv" name="cvv" placeholder="Enter CVV"><br>
+                </fieldset>
+              
+                <fieldset class="ticketinfo">
+                  <legend>Ticket Information:</legend>
+              
+                  <label for="museum">Pick a Museum:</label>
+                  <select id="museum" name="museum" class="ticketinfoitems"><br>
+                    <option value="AB">Alexandria Biblothica</option>
+                    <option value="APM">Abdeen Palace Museum</option>
+                    <option value="BP">Baron Empain Palace</option>
+                    <option value="CM">Coptic Museum</option>
+                    <option value="Gayer">Gayer Anderson Museum</option>
+                    <option value="GEM">GEM</option>
+                    <option value="NEM">National Egyptian Museum</option>
+                    <option value="NMEC">NMEC</option>
+                  </select><br>
+              
+                  <label for="tickets">Number of tickets:</label>
+                  <input type="number" id="tickets" name="tickets" placeholder="Enter number of tickets" class="ticketinfoitems">
+                  
+                  <label>Are you a student?</label>
+                  <input type="radio" id="yes" name="student" value="yes">
+                  <label for="yes">Yes</label>
+                  <input type="radio" id="no" name="student" value="no">
+                  <label for="no">No</label>
+                </fieldset>
+              
+
+              <input type="submit" value="Confirm">
+            </form>
+    </main>
+
+    
+    <footer>
+
+        
+        <div>
+            <p class="followUs-icons">
+                Follow us on:
+                <a href="https://www.facebook.com/"><img src="photos/facebook-icon.png" alt="Facebook"></a>
+                <a href="https://twitter.com/"><img src="photos/twitter-icon.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com/"><img src="photos/instagram-icon.png" alt="Instagram"></a>
+            </p>
+        </div>
+        <div>
+            <p class="footer-cc">
+                <a href="Privacy.html#help-section">Help</a> | 
+                <a href="Privacy.html#pp-section">Privacy Policy</a> | 
+                &copy; 2023 Norhan Waleed
+            </p>
+        </di>
+
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

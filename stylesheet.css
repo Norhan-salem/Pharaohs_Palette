@@ -1,0 +1,556 @@
+/*adding the fonts I'll use*/
+@import url('https://fonts.cdnfonts.com/css/syabil');
+@import url('https://fonts.cdnfonts.com/css/maharlika');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'syabil', sans-serif;
+    color: #120e02;
+}
+
+.web-icon{
+    height: 16px; 
+    width: 16px;
+}
+
+/*the video will cover the entire viewport
+overflow will be hidden
+The video will maintain its aspect ratio*/
+.signup-video{
+    position: fixed; 
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0; 
+    overflow: hidden; 
+    z-index: -100;
+}
+
+.signup-video video{
+    position:absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+}
+
+h3, h2{
+    color: #120e02;
+    text-align: center;
+    font-family: 'Maharlika', sans-serif;
+    padding-bottom: 20px;
+    font-weight: normal;
+}
+h1{
+    font-family: 'Maharlika'; 
+    color: #8f2400; 
+    padding: 20px;
+    font-weight: normal;
+    text-align: left;
+}
+.signup-form {
+    background-color: #e3d9b5;
+    width: 500px;
+    padding: 20px;
+    border: 1px solid #ccc5b8;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(202, 201, 162, 0.15);
+    font-family: 'syabil', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px; 
+    margin-bottom: 40px;
+}
+
+.formlogo{
+    width: 300px; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+.signup-form label{
+    display: block;
+    text-align: left;
+    margin-left: 65px;
+    font-family: 'syabil', sans-serif;
+    color: #120e02;
+}
+
+.signup-form input[type="text"], input[type="email"], input[type="password"], input[type="date"], input[type="tel"] {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc5b8;
+    font-family: 'syabil', sans-serif;
+    color: #120e02;
+    /* Center the text boxes */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px; /* Rounded borders */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Add some shadow for depth */
+}
+
+.signup-bottomline{
+    color: #e3d9b5; 
+    margin: 20px; 
+    text-align: center;
+}
+
+.signup-bottomline a{
+    color: #8f2400; 
+    font-family: 'syabil',sans-serif;
+}
+
+.signup-bottomline a:hover{
+    color: #e3d9b5; 
+}
+
+.signup-am{
+    text-align: center; 
+    color: #120e02; 
+    font-family: 'syabil',sans-serif;
+}
+
+.signup-am a{
+    color: #8f2400; 
+    font-family: 'syabil',sans-serif;
+}
+
+/* Adding a new class for js manipulation of a button just changed the color to blue*/
+js-button{
+    background-color: blue;
+    color: #eeece8;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer; /* the cursor turns into a hand pointing */
+    font-family: 'syabil', sans-serif;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #120e02;
+    color: #eeece8;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer; /* the cursor turns into a hand pointing */
+    font-family: 'syabil', sans-serif;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #8f2400;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+    color: #120e02; 
+    font-family: 'syabil',sans-serif;
+    padding: 20px;
+    background-color: #e3d9b5;
+    text-align: center;
+
+}
+
+.followUs-icons img{
+    width: 32px; 
+    height: 32px;
+}
+
+.footer-cc{
+
+    color: #120e02;
+    font-family: 'syabil',sans-serif;
+}
+
+.footer-cc a{
+
+    color: #8f2400;
+    font-family: 'syabil',sans-serif;
+}
+
+.footer-cc a:hover{
+
+    color: #120e02;
+}
+
+.header img{
+    height: 100px;
+    width: 250px;
+    padding: 5px;
+}
+.header {
+    display: flex;  /* The header is displayed as a flex container */
+    justify-content: space-between;  /* Distributed in the line with equal space around them. */
+    padding: 0%;
+    background-color: #e3d9b5;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+}
+
+.header a:hover{
+    color: #8f2400;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+.navbar a {
+    margin: 0 30px;
+    text-decoration: none;
+    color: #120e02;
+
+}
+
+
+.dropdown {
+    position: relative;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 280px;
+    background-color: #8f2400;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown-content a {
+    color: #e3d9b5;
+    padding: 15px 25px;
+    line-height: 4;
+}
+
+.dropdown-content a:hover {
+    color: #120e02;
+    border-bottom: 2px solid #120e02;
+}
+
+.dropdown-sub {
+    position: relative;
+}
+
+.dropdown-content-sub {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    min-width: 250px;
+    background-color: #6e1b00;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.dropdown-sub:hover .dropdown-content-sub {
+    display: block;
+}
+
+.aboutus-article{
+    font-size: 22px; 
+    text-align: justify;
+}
+.pp{
+
+    background-image: url("photos/backpp.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    text-align: left;
+
+}
+
+.pp article{
+    margin-left: 15px;
+}
+
+.pp h2{
+    text-align: left;
+    margin-top: 70px;
+    margin-bottom: 0px;
+}
+
+.pp summary{
+
+    font-size: 22px;
+    padding: 10px;
+}
+
+.bt fieldset{
+
+    border-color: #8f2400;
+    margin: 20px;
+    border-radius: 5px;
+
+}
+
+.bt label{
+    margin-left: 70px;
+}
+
+.bt legend{
+
+    color: #8f2400;
+}
+
+.bt h3{
+    color: #8f2400;
+    font-size: 28px;
+}
+
+.btbody{
+    background-image: url("photos/Untitled\ design.png");
+}
+
+.ticketinfo label{
+    margin-left: 5px;
+}
+
+.ticketinfoitems{
+    margin-bottom: 10px;
+}
+
+.homevideo-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+  
+}
+.homevideo-section video {
+    position: absolute;
+    width: 100%;
+}
+
+
+.actext{
+    display: flex;
+    /*The spacing between any two items and the space to the edges is equal*/
+    justify-content: space-around; 
+    align-items: center;
+    padding: 20px;
+}
+
+.actext h2{
+    color:#8f2400;
+    text-align: left;
+}
+
+.acimage {
+    width: 30%; 
+    height: auto; 
+}
+
+img {
+    max-width: 100%; 
+    height: auto;
+}
+
+.homebody{
+    background-color: #fffae7;
+}
+
+.actt{
+    text-align: justify;
+    width: 30%;
+}
+
+.contact-section {
+    width: 97%;
+    display: flex;
+    flex-direction: column; /*How flex items are placed in the flex container, Items will be arranged in a column*/
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #8f2400;
+    border-radius: 10px;
+    box-sizing: border-box; /*This property includes padding and border in the element's total width and height instead of adding it*/
+    padding-top: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.contact-section legend{
+    color: #8f2400;
+    font-family: 'Maharlika',sans-serif;
+    font-size: large;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.contact-form label, .contact-form input, .contact-form textarea {
+    display: inline-block;
+    vertical-align: top; /* The element is aligned with the top of the tallest element on the line*/
+}
+
+.contact-form label {
+    width: 30%;
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-form input[type="email"], .contact-form input[type="file"], .contact-form input[type="range"] {
+    width: 20%;
+    margin-bottom: 20px;
+}
+
+.contact-form textarea {
+    width: 50%;
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-color: #8f2400;
+}
+
+.contact-form input[type="submit"] {
+    margin-left: 32%;
+    margin-bottom: 20px;
+}
+
+.contact-form a{
+    font-size: small;
+    color: #8f2400;
+    display: block;
+    margin-left: 32%;
+}
+
+.contact-form a:hover{
+    color: #120e02;
+}
+
+
+.grid-container {
+    display: grid; /* Use the CSS Grid layout. */
+    grid-template-columns: repeat(3, 1fr); /* Define the number and size of columns in the grid. It creates 3 equal-width columns. */
+    gap: 10px; /* Set the size of the gap between the grid cells. */
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #fffae7;
+}
+
+.grid-item {
+    position: relative;
+    border-radius: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* The content of the replaced element should be resized to fit its container. 'cover' scales the image to cover the entire content box*/
+}
+
+
+.grid-item .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(99, 25, 1, 0.5);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.grid-item:hover .overlay {
+    height: 20%;
+}
+
+.text {
+    color: #e3d9b5;
+    font-family: 'syabil',sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    /* Moves the text element up and left by half of its own width and height, centering the text element within its container*/
+    text-align: center;
+}
+
+aside {
+    background-color: #551601;
+    border: 2px solid #551601;
+    color:#e3d9b5;
+    float: left;
+    padding: 20px;
+  }
+
+.ancient {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.info {
+    width: 40%;
+    text-align: justify;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+}
+.image {
+    width: 40%;
+}
+.image img {
+    width: 100%;
+    height: auto;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+.mummies {
+    margin-left: 60px;
+    margin-right: 60px;
+    display: flex;
+    overflow-x: scroll;
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    background-color: white;
+}
+.mummies img {
+    flex: 0 0 auto;
+    width: 10%;
+    height: 300px;
+    padding: 30px;
+}
+
+.ancienttxt{
+
+    text-align: left;
+    margin-left: 60px;
+}
+
+.islamic {
+    display: flex;
+    flex-wrap: wrap; /*It sets the direction that lines are stacked*/
+    justify-content: center;
+}
+.islamic img {
+    margin: 10px;
+    width: 20%;
+    height: 30%;
+}
